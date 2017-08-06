@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop Borodinskiy</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header class="page-header">
+    <div class="page-header__logo">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" alt="Барбершоп Бородинский">
+      </picture>
+      
+    </div>
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">     
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="work-page.html">Наши работы</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#">Записаться</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a href="#">Новости</a></li>
+        </ul>
+        <div class="main-nav__user-block">
+          <a class="main-nav__user-login" href="#">Вход</a>
+        </div>
+      </div>
+		</nav>
+	</header>
+
+  <section class="recording">
+    <div class="recording__wrapper">
+      <h2 class="recording__title">Запись на стрижку</h2>
+      <a href="index.html" class="btn btn-index">На главную</a>
+      <form  class="recording-form" action="/" method="post">
+        <fieldset class="recording-form__user-info">
+          <div class="name">
+            <input type="text" name="surname" id="surname" placeholder="Фамилия" required>
+            <input type="text" name="name" id="name" placeholder="Имя" required>
+            <input type="text" name="farthename" id="farthename" placeholder="Отчество" required>
+          </div>
+          <div class="contacts">
+            <input type="tel" name="tel" id="tel" placeholder="Контактный телефон" required>
+            <input type="email" name="email" id="email" placeholder="Контактный e-mail">
+          </div>
+          <div class="extra">
+            <textarea name="extra-info" id="extra-info">Доп. информация для мастера</textarea>
+          </div>
+        </fieldset>
+        <fieldset class="recording-form__beard-info">
+          <legend>Выберите модель бороды:</legend>
+          <div class="beard-form beard-form_1">
+            <input type="radio" name="beard" id="beard-1" checked>
+            <label for="beard-1">адмирал</label>
+          </div>
+          <div class="beard-form beard-form_2">
+            <input type="radio" name="beard" id="beard-2">
+            <label for="beard-2">лесоруб</label>
+          </div>
+          <div class="beard-form beard-form_3">
+            <input type="radio" name="beard" id="beard-3">
+            <label for="beard-3">полярник</label>
+          </div>
+          <div class="beard-form beard-form_4">
+            <input type="radio" name="beard" id="beard-4">
+            <label for="beard-4">боярин</label>
+          </div>
+          <div class="beard-form beard-form_5">
+            <input type="radio" name="beard" id="beard-5">
+            <label for="beard-5">мудрец</label>
+          </div>
+        </fieldset>
+        <fieldset class="recording-form__extra-service">
+          <legend>Дополнительные услуги:</legend>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-1" id="serv-1" checked>
+            <label for="serv-1">Подкрасить бороду</label>
+          </div>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-2" id="serv-2" checked>
+            <label for="serv-2">Накрутить усы</label>
+          </div>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-3" id="serv-3">
+            <label for="serv-3">Причесать бороду</label>
+          </div>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-4" id="serv-4">
+            <label for="serv-4">Подровнять виски</label>
+          </div>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-5" id="serv-5">
+            <label for="serv-5">Убрать седину</label>
+          </div>
+          <div class="extra_service__item">
+            <input type="checkbox" name="serv-6" id="serv-6">
+            <label for="serv-6">Отполировать лысину</label>
+          </div>
+        </fieldset>
+        <input  class="btn btn-send" type="submit" value="Отправить заявку">
+      </form>
+      
+    </div>
+  </section>  
+	
+	<footer class="page-footer">
+			<section class="page-footer__contacts">
+    		<h1>Барбершоп "Бородинский"</h1>
+    		<p>г. Санкт-Петербург, ул. Большая Конюшенная д.19/8</p>
+    		<b>Тел. +7(495) 555-02-55</b>
+			</section>
+			<section class="page-footer__social">
+				<p>Давайте дружить:</p>
+        <a href="#" class="page-footer__social-btn page-footer__social-btn-vk">Вконтакте</a>
+        <a href="#" class="page-footer__social-btn page-footer__social-btn-fb">Фейсбук</a>
+        <a href="#" class="page-footer__social-btn page-footer__social-btn-inst">Инстаграм</a>
+			</section>
+			<section class="page-footer__copyright">
+				<p>Разработано:</p>
+				<a href="#" class="btn">HTML Academy</a>
+			</section>
+	</footer>
+  <div class="popup-login">
+    <button type="button" class="popup-login__modal-close"></button>
+    <h3>Личный кабинет</h3>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="" class="popup-login__form">
+      <input class="icon-user" type="text" name="login"  placeholder="Логин">
+      <input class="icon-lock" type="password" name="password" placeholder="Пароль">
+      <div class="popup-login__tips clearfix">
+        <input type="checkbox" name="remember" id="remember" checked>
+        <label class="remember-login" for="remember">Запомните меня</label>
+        <a  class="forget-login" href="#" >Я забыл пароль!</a>  
+      </div>
+      <button type="submit" class="btn btn-come">Войти <span>в личный кабинет</span></button>
+      <button type="button" class="btn btn-close ">Закрыть</button>
+    </form>
+  </div>
+</body>
+<script src="js/navigation.js"></script>
+<script src="js/popup-login.js"></script>
+</html>
