@@ -1,6 +1,7 @@
 # Игнор-лист файлов проекта
+adaptive pdf
 *.pdf
-/img/*
 /fonts/*
 less/*
+node_modules
 prepros.cfg
