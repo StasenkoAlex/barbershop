@@ -2653,28 +2653,34 @@ body {
 }
 
 .reviews__item {
-	width: 738px;
-	height: 100px;
+	width: 798px;
+	height: 160px;
 	margin: 0 80px;
-	padding: 30px 30px;
+	padding: 0;
 	border: 1px solid #e5ddd5;
 }
 
 .reviews__author-foto {
-	margin-top: 25px;
+	margin: 0;
+	width: 249px;
 }
 
 .reviews__author-foto img {
+	width: 100%;
+	height: auto;
 	border-radius: 0%;
 }
 
 .reviews__author-name {
+	display: inline-block;
+	margin-top: 30px;
 	margin-left: 52px;
 }
 
 .reviews__author-text {
+	float: right;
+	width: 450px;
 	padding-right: 50px;
-	padding-left: 120px;
 }
 
 .reviews__prev,
